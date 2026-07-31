@@ -1,7 +1,6 @@
 # Домашнее задание 30: Сценарии iptables
 
 ## Задания
-
 реализовать knocking port<br>
 centralRouter может попасть на ssh inetrRouter через knock скрипт
 пример в материалах.<br>
