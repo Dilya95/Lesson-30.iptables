@@ -17,7 +17,7 @@ centralRouter может попасть на ssh inetrRouter через knock с
 
 ## Выполнение
 
-### 
+### Реализация knocking port. centralRouter может попасть на ssh inetrRouter через knock скрипт
 ```
 
 [root@otus-homework otus-linux]# vagrant ssh centralRouter
@@ -433,7 +433,7 @@ Jul 31 13:32:02 inetRouter systemd[1]: Finished netfilter-persistent.service - n
 Hint: Some lines were ellipsized, use -l to show in full.
 ```
 
-### 
+### Добавить inetRouter2, который виден(маршрутизируется) с хоста или форвардится порт через локалхост.<br>
 ```
 [root@otus-homework otus-linux]# cat  Vagrantfile
 MACHINES = {
@@ -622,7 +622,7 @@ default via 10.0.2.2 dev enp0s3 proto dhcp src 10.0.2.15 metric 100
 192.168.255.12/30 dev eth1 proto kernel scope link src 192.168.255.13 
 ```
 
-### 
+### Запустить nginx на centralServer. Пробросить 80й порт на inetRouter2 8080. Дефолт в инет оставить через inetRouter
 ```
 vagrant@centralRouter:~$ sudo -i
 root@centralRouter:~# ip -o -4 address show | grep '192.168.255.2/'
